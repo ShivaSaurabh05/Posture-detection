@@ -16,7 +16,8 @@ debugpy==1.8.7
 decorator==5.1.1
 executing==2.1.0
 filelock==3.16.1
-Flask==3.0.3
+Flask==2.3.2
+requests==2.31.0
 flatbuffers==1.12
 fonttools==4.54.1
 fsspec==2024.10.0
