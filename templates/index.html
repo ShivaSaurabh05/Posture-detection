@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Posture Detection</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="\static\css\styles.css"> 
+  </head>
+  <body>
+    <h2>Live Posture Detection</h2>
+    <!-- Close button outside video feed -->
+    <button id="close-button" onclick="closeTab()">×</button>
+    <div id="video-container">
+      <img src="{{ url_for('video_feed') }}" alt="Video feed" id="video-feed" />
+      <div id="posture-status">Posture: Good Posture</div>
+    </div>
+    <div id="timers">
+      <div class="timer good" id="good-posture-timer">
+        Good Posture Time: 0s
+      </div>
+      <div class="timer bad" id="bad-posture-timer">Bad Posture Time: 0s</div>
+    </div>
+    <script src="\static\js\scripts.js"></script>
+    <script>
+      // JavaScript function to close the current browser tab
+      function closeTab() {
+        window.close();
+      }
+    </script>
+  </body>
+</html>
